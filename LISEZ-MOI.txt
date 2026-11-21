@@ -1,0 +1,10 @@
+LIFE RPG V2 ? PWA
+=================
+
+Life RPG V2 is a mobile first, offline capable personal life tracker. Extract this ZIP and publish the files on any HTTPS static host to install it from Android Chrome. For local preview, serve this folder over HTTP (for example: python -m http.server 8000).
+
+Includes five pages: Quetes, Assistant IA, Accueil, Suivi and Profil. Activities and progression are stored locally in the browser. The Gemini assistant is optional and requires an API key and Internet access.
+
+To add a quest, ask the assistant to propose one and accept its quest card. Completed quests move into the Quetes effectuees section. The installation instructions are available in Profil. The guild concept is documented in GUILDE-FONCTIONNALITE-FUTURE.md and is not an active feature.
+
+See GUILDE-FONCTIONNALITE-FUTURE.md for the proposed guild direction. The app has no account or cloud synchronization. Backups exported as JSON are not encrypted.

@@ -1,0 +1,73 @@
+================================================================================
+GUIDE OFFICIEL D'INSTALLATION SUR TÉLÉPHONE ANDROID (ONEPLUS / TOUT ANDROID)
+APPLICATION : LIFE RPG V2 (PREMIUM PWA)
+Emplacement du projet : c:\Users\albin\Documents\Perso\ANTIGRAVITY REP\App vie jeu video\
+================================================================================
+
+Félicitations ! Votre application Life RPG V2 est prête, optimisée et 100% autonome.
+Comme il s'agit d'une PWA (Progressive Web App), elle s'installe directement depuis
+votre navigateur mobile sans avoir besoin de passer par le Play Store, fonctionne
+hors-ligne et conserve vos données en local sur votre appareil.
+
+--------------------------------------------------------------------------------
+1. CE QUE VOUS DEVEZ TÉLÉCHARGER
+--------------------------------------------------------------------------------
+Sur votre téléphone Android :
+- UNIQUEMENT : L'application "Google Chrome" (déjà installée par défaut sur OnePlus).
+  Aucun autre logiciel, compte payant ou outil n'est nécessaire.
+
+--------------------------------------------------------------------------------
+2. COMMENT METTRE L'APPLICATION SUR VOTRE TÉLÉPHONE (2 MÉTHODES)
+--------------------------------------------------------------------------------
+
+MÉTHODE A : EN LIGNE VIA NETLIFY DROP (GRATUIT, ULTRA RAPIDE & PERMANENT - RECOMMANDÉ)
+Pour qu'Android propose le vrai bouton "Installer l'application" (comme une app native),
+le site doit être servi sur une adresse sécurisée HTTPS. C'est gratuit et prend 1 minute :
+
+1. Sur votre ordinateur, rendez-vous sur le site officiel : https://app.netlify.com/drop
+2. Glissez-déposez le dossier de l'application (ou le fichier final.zip décompressé).
+3. Netlify vous génère instantanément un lien sécurisé HTTPS (ex: https://mon-life-rpg.netlify.app).
+4. Sur votre téléphone Android (OnePlus), ouvrez ce lien avec Google Chrome.
+5. Chrome affiche automatiquement en bas : « Ajouter Life RPG à l'écran d'accueil »
+   (ou appuyez sur les 3 petits points verticaux ⋮ en haut à droite > « Installer l'application »).
+6. L'icône de l'application apparaît sur l'écran d'accueil de votre téléphone !
+   Elle se lance en plein écran, sans barre d'URL, avec son icône officielle.
+   Elle fonctionne même sans connexion Internet grâce à son Service Worker.
+
+---
+
+MÉTHODE B : TEST DIRECT EN RÉSEAU LOCAL (VIA VOTRE WI-FI DE MAISON)
+Si vous souhaitez tester l'application directement depuis votre ordinateur sans l'héberger :
+
+1. Assurez-vous que votre téléphone et votre PC sont connectés au même réseau Wi-Fi.
+2. Sur votre PC, ouvrez un terminal PowerShell dans le dossier de l'app et lancez :
+   npx serve .
+   (ou python -m http.server 8000)
+3. Ouvrez Chrome sur votre smartphone et tapez l'adresse IP de votre PC :
+   http://VOTRE_ADRESSE_IP:8000
+4. Vous pouvez utiliser l'application immédiatement.
+
+--------------------------------------------------------------------------------
+3. CONFIGURATION OPTIONNELLE DE L'ASSISTANT IA GEMINI
+--------------------------------------------------------------------------------
+L'application fonctionne à 100% sans Internet pour toutes vos habitudes et quêtes.
+Pour activer le chat conversationnel avec l'Assistant Polytech dans l'onglet "Assistant" :
+1. Obtenez une clé API Gemini gratuite sur https://aistudio.google.com/
+2. Dans l'application sur votre téléphone, allez dans l'onglet "Profil".
+3. Cliquez sur "Configurer ma clé Gemini" et collez votre clé.
+4. Votre assistant devient actif immédiatement pour planifier vos révisions et créer vos quêtes !
+
+--------------------------------------------------------------------------------
+4. CONTENU DU DOSSIER FINAL
+--------------------------------------------------------------------------------
+- index.html   : Structure mobile ultra-optimisée avec Topbar XP, Donut, Dôme et Quêtes
+- styles.css   : Thème sombre OLED, Glassmorphism translucide et animations soignées
+- app.js       : Moteur applicatif complet (IndexedDB, progression, quêtes, IA)
+- manifest.json: Configuration PWA pour l'installation autonome sur Android
+- sw.js        : Service Worker pour le cache et le fonctionnement 100% hors-ligne
+- icon.svg     : Logo officiel vectoriel du Diamant de Rang
+- icon-192.png : Icône pour l'écran d'accueil mobile (résolution standard)
+- icon-512.png : Icône haute résolution pour le splash screen de démarrage
+
+Profitez bien de votre nouveau Life Tracker RPG !
+================================================================================
